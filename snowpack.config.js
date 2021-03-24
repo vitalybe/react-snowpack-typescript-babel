@@ -8,6 +8,15 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
+    [
+      "@snowpack/plugin-babel",
+      {
+        "input": ['.js', '.mjs', '.jsx', '.ts', '.tsx'], // (optional) specify files for Babel to transform
+        transformOptions: {
+          // babel transform options
+        }
+      }
+    ]
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
